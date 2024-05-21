@@ -9,12 +9,14 @@
         }
 
         public boolean match(int number1, int number2) {
+	    Matcher matcher = (n1, n2) -> {
             while (number2 != 0) {
                 int tmp = number1;
                 number1 = number2;
                 number2 = findModule(tmp, number2);
             }
-            return number1 == 1;
+	    };
+            return matcher.match(number1, number2);
         }
 
     }
