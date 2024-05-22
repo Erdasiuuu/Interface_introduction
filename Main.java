@@ -7,7 +7,7 @@ public class Main {
 	int n2 = scanner.nextInt();
 	Matcher matcher;
 	matcher = new SimpleMatcher();
-        System.out.print(matcher.match(n1, n2));
+        System.out.println(matcher.match(n1, n2));
 	matcher = new PrimeMatcher();
         System.out.print(matcher.match(n1, n2));
     }
