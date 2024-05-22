@@ -14,8 +14,7 @@
 		    n1 = n2;
 		    n2 = tmp;
             }
-	    System.out.println(n1);
-	    return number1 == 1;
+	    return n1 == 1;
 	    };
             return matcher.match(number1, number2);
         }
